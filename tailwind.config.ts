@@ -39,6 +39,14 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -80,10 +88,32 @@ export default {
             height: "0",
           },
         },
+        scan: {
+          "0%, 100%": { transform: "translateX(-100%)" },
+          "50%": { transform: "translateX(100%)" },
+        },
+        glow: {
+          "0%": { boxShadow: "0 0 5px currentColor" },
+          "100%": { boxShadow: "0 0 20px currentColor" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-slow": "pulse 3s ease-in-out infinite",
+        "scan": "scan 2s ease-in-out infinite",
+        "glow": "glow 2s ease-in-out infinite alternate",
+      },
+      backgroundImage: {
+        "cyber-gradient": "var(--cyber-gradient)",
+        "threat-gradient": "var(--threat-gradient)",
+        "safe-gradient": "var(--safe-gradient)",
+      },
+      boxShadow: {
+        "glow-primary": "var(--glow-primary)",
+        "glow-accent": "var(--glow-accent)",
+        "glow-threat": "var(--glow-threat)",
+        "glow-safe": "var(--glow-safe)",
       },
     },
   },
